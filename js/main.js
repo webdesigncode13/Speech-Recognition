@@ -64,7 +64,7 @@ recognition.addEventListener('result', (e) => {
         if(text.includes('close the window') || text.includes("close the tab")){
             p = document.createElement('p');
             p.classList.add('replay');
-            p.innerText = 'yes sir, opening....';
+            p.innerText = 'yes sir, Closing....';
             texts.appendChild(p);
             window.close('')
         }

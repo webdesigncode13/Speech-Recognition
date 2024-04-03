@@ -47,6 +47,20 @@ recognition.addEventListener('result', (e) => {
             texts.appendChild(p);
             window.open('https://www.youtube.com/@WebDesign-013')
         }
+        if(text.includes('open new window')){
+            p = document.createElement('p');
+            p.classList.add('replay');
+            p.innerText = 'yes sir, opening....';
+            texts.appendChild(p);
+            window.open('')
+        }
+        if(text.includes('close the window')){
+            p = document.createElement('p');
+            p.classList.add('replay');
+            p.innerText = 'yes sir, opening....';
+            texts.appendChild(p);
+            window.close('')
+        }
         p = document.createElement('p');
     }
 

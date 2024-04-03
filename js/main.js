@@ -28,6 +28,18 @@ recognition.addEventListener('result', (e) => {
             p.innerText = "My Name is Jiji, Yours?";
             texts.appendChild(p);
         }
+        if(text.includes('how are you')){
+            p = document.createElement('p');
+            p.classList.add('replay');
+            p.innerText = 'I am fine, How about you?';
+            texts.appendChild(p);
+        }
+        if(text.includes('what is your age')){
+            p = document.createElement('p');
+            p.classList.add('replay');
+            p.innerText = 'Only few days ago, beacuse i was born on 3rd April 2024!';
+            texts.appendChild(p);
+        }
         if(text.includes('open my YouTube channel')){
             p = document.createElement('p');
             p.classList.add('replay');

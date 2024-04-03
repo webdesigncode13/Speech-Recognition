@@ -34,7 +34,7 @@ recognition.addEventListener('result', (e) => {
             p.innerText = 'I am fine, How about you?';
             texts.appendChild(p);
         }
-        if(text.includes('what is your age')){
+        if(text.includes('what is your age') || text.includes("how old are you")){
             p = document.createElement('p');
             p.classList.add('replay');
             p.innerText = 'Only few days ago, beacuse i was born on 3rd April 2024!';

@@ -47,12 +47,19 @@ recognition.addEventListener('result', (e) => {
             texts.appendChild(p);
             window.open('https://www.youtube.com/@WebDesign-013')
         }
-        if(text.includes('open new window')){
+        if(text.includes('play song')){
             p = document.createElement('p');
             p.classList.add('replay');
             p.innerText = 'yes sir, opening....';
             texts.appendChild(p);
-            window.open('')
+            window.open('https://www.jiosaavn.com/featured/tamil-hit-songs/QbD85KAEmtcZmWp1Op3nVA__')
+        }
+        if(text.includes('open new window') || text.includes("open new tab")){
+            p = document.createElement('p');
+            p.classList.add('replay');
+            p.innerText = 'yes sir, opening....';
+            texts.appendChild(p);
+            window.open('https://www.google.com/')
         }
         if(text.includes('close the window')){
             p = document.createElement('p');
